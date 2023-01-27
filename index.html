@@ -4,13 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Snap</title>
   </head>
   <body>
     <!-- comienza header  -->
     <header>
-      <nav>
-        <h2></h2>
+      <nav class="nav">
+        <figure class="nav__figure">
+          <img src="./img/logo.svg" alt="" class="nav__img" />
+        </figure>
+        <ul>
+          <li>Features <img src="./img/icon-arrow-down.svg" alt="" /></li>
+
+          <div class="nav__itemFeatures">
+            <li><img src="img/icon-todo.svg" alt="" />To do list</li>
+            <li><img src="img/icon-calendar.svg" alt="" />Calendar</li>
+            <li><img src="img/icon-reminders.svg" alt="" />Reminders</li>
+            <li><img src="img/icon-planning.svg" alt="" />Planning</li>
+          </div>
+
+          <li>Company</li>
+
+          <div class="nav__itemCompany">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </div>
+
+          <li>Careers</li>
+
+          <li>About</li>
+        </ul>
+        <div class="nav__buttons">
+          <button>Login</button>
+          <button class="nav__buttonRegister">Register</button>
+        </div>
       </nav>
       <section>
         <article></article>
