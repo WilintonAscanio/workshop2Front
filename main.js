@@ -21,6 +21,24 @@ btnfeatures.addEventListener("click", () => {
   nav__itemFeature.classList.toggle("hidden");
 });
 
+window.addEventListener("resize", () => {
+  if (screen.width >= 900) {
+    console.log("si claro");
+    btnfeatures.addEventListener("mouseover", () => {
+      nav__itemFeature.classList.toggle("hidden");
+    });
+    btnfeatures.addEventListener("mouseleave", () => {
+      nav__itemFeature.classList.toggle("hidden");
+    });
+    btncompany.addEventListener("mouseover", () => {
+      nav__itemCompany.classList.toggle("hidden");
+    });
+    btncompany.addEventListener("mouseleave", () => {
+      nav__itemCompany.classList.toggle("hidden");
+    });
+  }
+});
+
 btncompany.addEventListener("click", () => {
   nav__itemCompany.classList.toggle("hidden");
 });
