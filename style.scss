@@ -8,11 +8,30 @@ $gray: #8e8e8e;
   font-family: "Epilogue", sans-serif;
 }
 
+:root {
+  --animate-delay: 0.1s;
+}
+
 body {
   width: 100%;
   height: 100vh;
   background-color: #fff;
 }
+/*Agregamos estilos para las scroll bars*/
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $gray;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -193,6 +212,9 @@ html {
   }
 }
 @media (max-width: 900px) {
+  body::-webkit-scrollbar-thumb {
+    visibility: hidden;
+  }
   .nav {
     justify-content: space-between;
 
@@ -206,7 +228,11 @@ html {
 
     .nav__navigation {
       display: none;
-      background-color: $gray;
+      background: linear-gradient(
+        180deg,
+        rgba(142, 142, 142, 1) 24%,
+        rgba(142, 142, 142, 0.4599089635854342) 71%
+      );
       flex-grow: 0;
       .nav__ul {
         margin-top: 0;
