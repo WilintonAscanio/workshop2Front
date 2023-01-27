@@ -67,3 +67,60 @@ body {
     }
   }
 }
+
+/*Estilos header*/
+
+.header__main {
+  display: flex;
+  width: 80%;
+  margin: 2.5% 10%;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    padding: 6% 0% 4% 0%;
+
+    h1 {
+      font-size: 70px;
+    }
+    p {
+      color: #939393;
+    }
+    button {
+      width: 150px;
+      height: 50px;
+      border-radius: 10px;
+      font-size: 15px;
+      border: transparent;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      &:hover {
+        background: white;
+        color: black;
+        border: 2px solid black;
+        cursor: pointer;
+      }
+    }
+    figure {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      height: 40px;
+    }
+    figure img {
+      height: 25px;
+    }
+  }
+
+  &__right {
+    width: 50%;
+
+    & figure img {
+      width: 80%;
+    }
+  }
+}
