@@ -207,7 +207,8 @@ html {
       width: 100%;
       & img {
         width: 380px;
-        height: 430px;
+        height: 450px;
+        object-fit: cover;
       }
     }
   }
@@ -321,10 +322,10 @@ html {
     }
     &__right {
       width: 100%;
+      padding: 0;
       & figure {
         & img {
           width: 100%;
-          height: 100%;
         }
       }
     }

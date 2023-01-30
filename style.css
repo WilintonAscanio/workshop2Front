@@ -200,7 +200,8 @@ html {
 }
 .header__main__right figure img {
   width: 380px;
-  height: 430px;
+  height: 450px;
+  object-fit: cover;
 }
 
 @media (max-width: 900px) {
@@ -219,11 +220,7 @@ html {
   }
   .nav .nav__navigation {
     display: none;
-    background: linear-gradient(
-      180deg,
-      rgb(142, 142, 142) 24%,
-      rgba(142, 142, 142, 0.4599089636) 71%
-    );
+    background: linear-gradient(180deg, rgb(142, 142, 142) 24%, rgba(142, 142, 142, 0.4599089636) 71%);
     flex-grow: 0;
   }
   .nav .nav__navigation .nav__ul {
@@ -307,10 +304,10 @@ html {
   }
   .header__main__right {
     width: 100%;
+    padding: 0;
   }
   .header__main__right figure img {
     width: 100%;
-    height: 100%;
   }
 }
 
